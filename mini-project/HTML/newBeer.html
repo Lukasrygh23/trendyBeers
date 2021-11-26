@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Beer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Pretentious Beer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" href="./HTML/newBeer.html">New Beer</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container m-3">
+        <h3> Create New Beer </h3>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="newName">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tagline</label>
+            <input type="text" class="form-control" id="newTagline">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" class="form-control" id="newDesc">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">First Brewed</label>
+            <input type="text" class="form-control" id="newBrewed">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image_url</label>
+            <input type="text" class="form-control" id="newImage">
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-success mb-3 btn-lg" id="submitBeer"> Submit Beer </button>
+        </div>
+    </div>
+
+    <script src="../JS/newBeer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
