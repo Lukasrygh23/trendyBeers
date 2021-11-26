@@ -13,7 +13,7 @@ if (testDB == true) {
 // Importing packages as a variable
 const express = require('express');
 const cors = require('cors');
-const routes = require('./routes/route');
+const routes = require('./routes/routes.js');
 const mongoose = require('mongoose');
 
 // creating a variable called app that is equal to express.
