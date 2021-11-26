@@ -8,6 +8,7 @@ let beerId = document.querySelector('#beerId');
 console.log(getAll.innerHTML);
 
 const getBeers = () => {
+    //fetch(`Whatever Kieran makes getAll to`).then((response => {
     fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
         if(response.status !== 200){
             console.error(response.status);
@@ -23,6 +24,7 @@ const getBeers = () => {
 };
 
 const getBeerId = (id) => {
+    //fetch(`Whatever Kieran makes getId map to`).then((response => {}
     fetch(`https://api.punkapi.com/v2/beers/${id}`).then((response) => {
         if(response.status !== 200){
             console.error(response.status);
@@ -46,6 +48,15 @@ const deleteBeer = (id) => {
     //     };
     //     console.log(response);
     // })
+}
+
+const updateBeer = (id, beer) => {
+    console.log(id);
+    //Rest to come.
+}
+
+const createBeer = (beer) => {
+    console.log(beer);
 }
 
 const clearDiv = () => {
