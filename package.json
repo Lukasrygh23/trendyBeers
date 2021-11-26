@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Lukasrygh23/trendyBeers/issues"
   },
-  "homepage": "https://github.com/Lukasrygh23/trendyBeers#readme"
+  "homepage": "https://github.com/Lukasrygh23/trendyBeers#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
+  }
 }
