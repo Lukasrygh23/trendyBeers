@@ -1,0 +1,20 @@
+{
+  "name": "trendybeers",
+  "version": "1.0.0",
+  "description": "lol. lmao.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukasrygh23/trendyBeers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukasrygh23/trendyBeers/issues"
+  },
+  "homepage": "https://github.com/Lukasrygh23/trendyBeers#readme"
+}
