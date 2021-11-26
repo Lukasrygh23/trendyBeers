@@ -8,7 +8,8 @@ let beerId = document.querySelector('#beerId');
 console.log(getAll.innerHTML);
 
 const getBeers = () => {
-    fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
+    //fetch(`Whatever Kieran makes getAll to`).then((response => {
+    fetch(`http://localhost:6969/beer/getAll`).then((response) => {
         if(response.status !== 200){
             console.error(response.status);
             return;
@@ -23,7 +24,8 @@ const getBeers = () => {
 };
 
 const getBeerId = (id) => {
-    fetch(`https://api.punkapi.com/v2/beers/${id}`).then((response) => {
+    //fetch(`Whatever Kieran makes getId map to`).then((response => {}
+    fetch(`http://localhost:6969/beer/get/:id`).then((response) => {
         if(response.status !== 200){
             console.error(response.status);
             return;
@@ -39,14 +41,18 @@ const getBeerId = (id) => {
 
 const deleteBeer = (id) => {
     console.log(id);
-    // fetch(`delete URI`).then((response) => {
-    //     if(response.status !== 202){
-    //         console.error(response.status);
-    //         return;
-    //     };
-    //     console.log(response);
-    // })
+    fetch(`http://localhost:6969/beer/delete/:id`).then((response) => {
+        if (response.status !== 202) {
+            console.error(response.status);
+            return;
+        };
+        console.log(response);
+    });
 }
+
+
+
+
 
 const clearDiv = () => {
     beerDiv.innerHTML = "<h3> List of Beers </h3>"
