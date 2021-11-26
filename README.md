@@ -1,2 +1,1 @@
 # trendyBeers
-lol. lmao.
