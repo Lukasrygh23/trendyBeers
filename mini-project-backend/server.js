@@ -1,6 +1,6 @@
 'use strict';
 
-const testDB = false;
+const testDB = true;
 let dbURI;
 
 // Simple conditional to determine whether to use test or prod db
