@@ -8,7 +8,7 @@ router.post('/create', (req, res, next) => {
   beer
     .save()
     .then((result) => {
-      res.status(201).send(`Created Beer : ${result}`);
+      res.status(201).send(`Created Beer : ${result.name}`);
     })
     .catch((error) => {
       next(error);
@@ -28,12 +28,12 @@ router.get('/getAll', (req, res, next) => {
 
 router.delete('/delete/:id', (req, res) => {
   console.log(req.params.id);
-  Beer.findByIdAndDelete(req.params.id, (req, res) => {
+  Beer.findByIdAndDelete(req.params.id, (error) => {
     if (error) {
       console.log(`error : ${error}`);
       res.status(500).send(error);
     }
-    res.status(204).send(`Deleted entry by id: ${req.params.id}`);
+    res.status(202).send(`Deleted`);
   });
 });
 router.put('/update/:id', (req, res) => {
