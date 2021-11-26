@@ -57,6 +57,7 @@ const updateBeer = (id, beer) => {
 
 const createBeer = (beer) => {
     console.log(beer);
+    //Rest to come.
 }
 
 const clearDiv = () => {
